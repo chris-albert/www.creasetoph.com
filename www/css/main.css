@@ -1,0 +1,329 @@
+body {
+	background-image:url(../images/blackwoodxw4.jpg);
+    height: 100%;
+}
+/*Main site wrapper start*/
+.title {
+	margin: 0 auto;
+	width: 900px;
+	/*top: -70px;*/
+	position: relative;
+	/*top: -70px;*/
+	text-align: center;
+}
+
+.sign_in {
+	font-size: .7em;
+}
+
+.nav_wrapper {
+	text-align: center;
+}
+.nav_container {
+	display: inline-block;
+	display: -moz-inline-block;
+	height: 40px;
+	/*top: -70px;*/
+	position: relative;
+	/*top: -70px;*/
+	-moz-border-radius-topleft: 10px; 
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px; 
+	-webkit-border-top-right-radius: 10px;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+    padding: 10px 10px;
+}
+
+.main_container {
+	position: relative;
+	/*top: -70px;*/
+	margin: 0 auto;
+	width: 1000px;
+	/*top: -70px;*/
+	border: 3px solid black;
+	background-image: url(../images/transparent1.png);
+	color: #E0E0E0;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 20px 5px 10px 5px;
+}
+/*main site wrapper end*/
+/*Site wide styles start*/
+input {
+	background-color: #222222;
+	border: 1px solid #ccc;
+	color: #ccc;
+	-moz-border-radius:5px;
+}
+textarea{
+	background-color: #222222;
+	color: #ccc;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+}
+.center {
+	text-align: center;
+	margin:0 auto;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.loading span{
+    text-align: center;
+}
+.loading {
+    padding-bottom: 20px;
+}
+.hidden_cache_container {
+    display: none;
+}
+/*--------------------------------------Navigation-----------------------------------------------------------*/
+.nav_main_container {
+    display: inline-block;
+    overflow: hidden;
+    height: 40px;
+    font-size: 1.1em;
+    padding: 0 2px;
+}
+.nav_text , .nav_link{
+    position: relative;
+    height: 20px;
+    /*top: -40px;*/
+    padding: 10px 10px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 20px; /*--Vertical alignment of text--*/
+    vertical-align: middle;
+    z-index:-10;
+}
+.nav_text {
+    background-image:url(../images/nav.png);
+	color: #E0E0E0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.nav_link_container {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    margin: 0 -3px;
+    /*z-index:-10;*/
+}
+.nav_slide {
+    position: relative;
+    height: 80px;
+    display: inline-block;
+}
+.current {
+    top: -40px;
+}
+
+.current .nav_link {
+
+}
+/*----------------------------------Slide-Box-Styles-Start---------------------------------------------------*/
+
+.creasetoph_content .slide_container {
+    position: absolute;
+    top     : 0;
+    right   : 30px;
+    /*top: -70px;*/
+}
+.sign_in_container {
+    padding: 10px;
+}
+.sign_in_container .crease_button {
+    display  : inline-block;
+    margin-top: 5px;
+}
+/*----------------------------------Slide-Box-Styles-End--------------------------------------------------*/
+.signin {
+	font-size: .7em;
+}
+input {
+	background-color: #222222;
+	border: 1px solid #ccc;
+	color: #ccc;
+	-moz-border-radius:5px;
+    font-size: .7em;
+}
+
+textarea{
+	background-color: #222222;
+	color: #ccc;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+}
+
+.center {
+	text-align: center;
+	margin:0 auto;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.small {
+	font-size: .8em;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	color: white;
+}
+
+a.link,
+span.link {
+	background-image:url(../images/nav.png);
+	color:#ccc;
+	padding-left:5px;
+	padding-right:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border:2px solid #222222;
+}
+
+a.link:hover,
+span.link:hover{
+	background-image:url(../images/nav.png);
+	color:#666666;
+	border:2px solid #ccc;
+}
+
+a img {
+	border: 2px solid black;
+}
+
+a img:hover {
+	border: 2px solid white;
+}
+
+.crease_button {
+    background-image:url(../images/nav.png);
+    padding: 2px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+    border:2px solid #222222;
+    color: #bbb;
+    font-size: 0.8em;
+    /*font-family: 'Times New Roman',Times,serif;*/
+}
+
+.crease_button:hover {
+    background-image:none;
+    /*border:2px solid #ccc;*/
+    /*cursor: pointer;*/
+}
+
+div.disabled {
+    color: black;
+    cursor: default;
+}
+
+.pagination {
+	text-align: right;
+}
+.pagination a, .pagination span {
+	border:1px solid black;
+	padding: 1px 3px 1px 3px;
+	font-size: .8em;
+	background-image:url(../images/nav.png);
+}
+.pagination a:hover {
+	color: black;
+}
+
+/* Tables */
+.table {
+    display: inline-block;
+    margin: 1px;
+    overflow: auto;
+}
+
+.table .table_row {
+    overflow: auto;
+}
+
+.table .table_cell {
+    border-bottom: 1px solid #555555;
+    border-right: 1px solid #555555;
+    float: left;
+    width: 100px;
+    padding: 0 3px 0 3px;
+    vertical-align: middle;
+}
+
+.table .table_row > .table_cell:first-child {
+    border-left: 1px solid #555555;
+}
+
+.table .table_row_head {
+    border-top: 1px solid #555555;
+}
+
+.table .table_row_body {
+
+}
+
+/* Dialogs */
+.dialog_main_container {
+    border: 1px solid black;
+}
+.dialog_main_container .dialog_header_text{
+     position: absolute;
+       margin: 2px 10px 0 10px;
+    font-size: .8em;
+        color: white;
+}
+.dialog_main_container .dialog_header {
+    background-image:url(../images/nav.png);
+}
+.dialog_main_container .dialog_body {
+    background-image: url(../images/transparent1.png);
+    color: white;
+    overflow: hidden;
+}
+.dialog_main_container .dialog_close_box {
+    background-image: url(../images/close.png);
+}
+.creasetoph_error_dialog .dialog_body{
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.json_error_container {
+    text-align: center;
+}
+
+.about_main_container {
+    text-align: center;
+}
+
+/*Site wide styles end*/

@@ -1,0 +1,339 @@
+/*----------------------------------FORUM-STYLES-------------------------------------------------------*/
+#forumCategories, #forumThreads, #forumPosts {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	border-spacing:0px;
+	font-size: .8em;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+#forumCategories tr.forumHead th, #forumThreads tr.forumHead th, #forumPosts td.head{
+	background-image:url(../../../images/nav.png);
+	border: 1px solid #555555;
+	color: #888888;
+	text-align: center;
+}
+#forumCategories td, #forumThreads td, #forumPosts td {
+	border: 1px solid #555555;
+}
+#forumThreads td span, #forumCategories td span {
+	width: auto;
+	height: 1.2em;
+}
+
+#forumCategories span, #forumThreads span, #forumPosts span {
+	display: inline-block;
+}
+#forumCategories tr a:hover, #forumThreads tr a:hover {
+	color: #333333;
+}
+/*Forum Categories*/
+#forumCategories .forum {
+	width: 210px;
+    padding: 0;
+}
+#forumCategories .forum .forumName {
+	width: 100%;
+	overflow: hidden;
+    padding-left: 2px;
+	text-align: left;
+}
+#forumCategories .forum .forumName a{
+	display: block;
+}
+#forumCategories .forum .forumMod {
+	width: 50px;
+	text-align: right;
+	vertical-align:top;
+}
+#forumCategories .lastPost {
+	width: 500px;
+}
+#forumCategories .lastPost .post {
+	width: 300px;
+	overflow: hidden;
+	vertical-align: top;
+	text-align: left;
+}
+#forumCategories .lastPost .post a {
+	display: block;
+}
+#forumCategories .lastPost .who {
+	width: 190px;
+	text-align: right;
+}
+#forumCategories .threads {
+	width: 80px;
+	text-align: center;
+}
+#forumCategories .posts {
+	width: 80px;
+	text-align: center;
+
+}
+
+/*Forum Threads*/
+#forumThreads .thread {
+	width: 400px;
+	text-align: left
+}
+#forumThreads .thread span {
+	display: block;
+}
+#forumThreads .thread a {
+	display: block;
+}
+#forumThreads .lastPost {
+	width: 300px;
+	text-align: center;
+}
+#forumThreads .replies {
+	width: 80px;
+	text-align: center;
+}
+#forumThreads .author {
+	width: 80px;
+	text-align: center;
+}
+/*Forum Posts*/
+#forumPosts .head a:hover{
+	color: black;
+}
+#forumPosts .head {
+	width: 875px;
+
+}
+#forumPosts .who {
+	width: 800px;
+	text-align: left;
+}
+#forumPosts .alert {
+	width: 130px;
+	text-align: right;
+}
+#forumPosts .avatar {
+	width: 200px;
+	text-align: center;
+	vertical-align:top;
+}
+#forumPosts .post {
+	width: 725px;
+	vertical-align:text-top;
+	padding: 5px;
+	text-align: left
+}
+#forumPosts .post a {
+	text-decoration: underline
+}
+#forumPosts .post a:hover {
+	color:#333333;
+}
+#forumPagination {
+	margin: 0 auto;
+	width: 935px;
+}
+/*Forum Reply*/
+#forumReply {
+	margin: 0 auto;
+}
+/*Forum Create New*/
+#newForum, #newCategory, #threadCreate {
+	border-spacing:0px;
+	border-collapse:collapse;
+	font-size: .8em;
+	border: 1px solid #555555;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#newForum td, #newCategory td, #threadCreate td {
+	text-align: left;
+}
+#newForum #submit, #newCategory #submit, #threadCreate #submit {
+	text-align: right;
+}
+.forumHead, .pictureHead {
+	text-align: center;
+	margin:0 auto;
+}
+.forumHead a:hover, .pictureHead a:hover {
+	color: #333333;
+}
+/*mod*/
+.mod {
+	position: relative;
+	vertical-align: bottom;
+}
+.mod ul {
+	position:absolute;
+	display: none;
+	background-color: #333333;
+	list-style: none;
+	top: 3px;
+	left: 0;
+	text-align: left;
+	padding: 2px;
+	color: white;
+	z-index: 100;
+	border:1px solid black;
+}
+.mod ul li a {
+	display: block;
+}
+.overlay {
+	position: relative;
+	vertical-align: bottom;
+}
+.overlay div {
+	position:absolute;
+	display: none;
+	background-color: #333333;
+	list-style: none;
+	top: 3px;
+	left: 0;
+	text-align: left;
+	padding: 2px;
+	color: white;
+	z-index: 100;
+	border:1px solid black;
+}
+.alertOverlay {
+	width: 400px;
+}
+#forumCategories .mod a:hover {
+	color: black;
+}
+.signature {
+
+}
+hr {
+	color: black;
+	background-color: black;
+	border: 100% ridge black;
+}
+/*-----------------------Forum-Nav------------------------------*/
+.forum_nav {
+    margin-bottom: 10px;
+}
+.forum_nav a:hover {
+    color: #333333;
+}
+/*------------------------Forums-Table--------------------------*/
+.forum_main_container {
+    text-align: center;
+}
+.forum_container {
+    font-size: .8em;
+}
+.forum_container .table_row_head {
+    background-image:url(../../../images/nav.png);
+    color: #888888;
+    font-weight: bold;
+    text-align: center;
+}
+
+.forum_container .table_row_body {
+    text-align: left;
+    color: #e0e0e0;
+}
+
+/*-----------------------------Forums----------------------------------*/
+.forum_container .forum_name {
+    width: 210px;
+}
+
+.forum_container .forum_last_post {
+    width: 550px;
+}
+
+.forum_container .forum_threads {
+    width: 60px;
+    text-align: center;
+}
+
+.forum_container .forum_posts {
+    width: 60px;
+    text-align: center;
+}
+
+.forum_container .forum_last_post_title {
+    width: 60%;
+    float: left;
+}
+
+.forum_container .forum_last_post_user {
+    width: 40%;
+    float: left;
+    text-align: right;
+}
+
+/*---------------------------------Forum--------------------------------------*/
+.forum_container .thread_name {
+    width: 410px;
+}
+
+.forum_container .thread_last_post {
+    width: 300px;
+    text-align: center;
+}
+
+.forum_container .thread_replies {
+    width: 60px;
+    text-align: center;
+}
+
+.forum_container .thread_author {
+    width: 100px;
+    text-align: center;
+}
+/*---------------------------------Posts--------------------------------------*/
+.forum_container .post_head {
+    width: 950px;
+    font-weight: normal;
+    position: relative;
+    height: 1.3em;
+}
+
+.forum_container .post_content_container {
+    width: 950px;
+}
+.forum_container .post_image {
+    width: 200px;
+    text-align: center;
+    padding: 0px;
+    float: left;
+    border-right: 1px solid #555555;
+}
+
+.forum_container .post_content,
+.forum_container .post_sig{
+    width: 740px;
+    padding: 2px 3px 0 3px;
+    float: left;
+    border-left: 1px solid #555555;
+    min-height: 100%;
+    margin-left: -1px;
+}
+
+.forum_container .post_head .post_head_user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 0 2px 0 2px;
+}
+
+.forum_container .post_head .post_head_post_num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 0 2px 0 2px;
+}
+
+.forum_thread_container {
+    display: inline-block;
+}

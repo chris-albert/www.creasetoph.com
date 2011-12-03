@@ -1,0 +1,690 @@
+/*---------------------Start-Site-Styles----------------------*/
+/* -moz-border-radius-topleft  / -webkit-border-top-left-radius
+ * -moz-border-radius-topright / -webkit-border-top-right-radius
+ * -moz-border-radius-bottomleft / -webkit-border-bottom-left-radius
+ * -moz-border-radius-bottomright / -webkit-border-bottom-right-radius 
+ */
+body {
+	background-image:url(../images/blackwoodxw4.jpg);
+	text-align: center;
+}
+.title {
+	margin: 0 auto;
+	width: 900px;
+	position: relative;
+	top: -70px;
+	text-align: center;
+}
+.all-four-rounded-corners {
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.topnavContainer {
+	display: inline-block;
+	display: -moz-inline-block;
+	height: 60px;
+	position: relative;
+	top: -70px;
+	
+	-moz-border-radius-topleft: 10px; 
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px; 
+	-webkit-border-top-right-radius: 10px;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+}
+/*
+ul#topnav {
+	margin: 0;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font-size: 1.1em;
+}
+ul#topnav li {
+	margin: 0;
+	padding-right: 10px;
+	overflow: hidden;
+	float: left;
+	height:40px;
+	text-align:center;
+}
+ul#topnav a, ul#topnav span {
+	padding: 10px 5px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+ul#topnav a {
+	color: white;
+	background-position: left bottom;
+}
+ul#topnav span{
+	background-image:url(../images/nav.png);
+	color: #E0E0E0;
+	-moz-border-radius: 10px;
+}
+*/
+ul#topnav {
+	margin: 10px;
+	position: relative;
+	/*top: 10px;
+	left: 10px;*/
+	padding: 0;
+	list-style: none;
+	float: left;
+	font-size: 1.1em;
+}
+ul#topnav li {
+	margin: 0;
+	padding-right: 10px;
+	overflow: hidden;  /*--Important - Masking out the hover state by default--*/
+	float: left;
+	height:40px;
+	text-align:center;
+}
+ul#topnav a, ul#topnav span {
+	padding: 10px 5px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	line-height: 20px; /*--Vertical alignment of text--*/
+}
+
+ul#topnav a { /*--hover state of navigation--*/
+	color: white;
+	background-position: left bottom;
+}
+ul#topnav span{ /*--Default state of navigation--*/
+	background-image:url(../images/nav.png);
+	color: #E0E0E0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#cur {
+	padding-bottom: 13px;
+	background-image:url(../images/navCur.png);
+	background-repeat: repeat-x;
+	-moz-border-radius-topleft: 10px; 
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px; 
+	-webkit-border-top-right-radius: 10px;
+}
+.navSpan {
+	margin-top: 0px;
+}
+.main {
+	position: relative;
+	top: -70px;
+	margin: 0 auto;
+	width: 1000px;
+	border: 3px solid black;
+	background-image: url(../images/transparent1.png);
+	color: #E0E0E0;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px;
+}
+.signin {
+	font-size: .7em;
+}
+input {
+	background-color: #222222;
+	border: 1px solid #ccc;
+	color: #ccc;
+	-moz-border-radius:5px;
+}
+textarea{
+	background-color: #222222;
+	color: #ccc;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+}
+.center {
+	text-align: center;
+	margin:0 auto;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.small {
+	font-size: .8em;	
+}
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+a:hover {
+	color: white;
+}
+a.link {
+	background-image:url(../images/nav.png);
+	color:#ccc;
+	padding-left:5px;
+	padding-right:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border:2px solid #222222;
+}
+a.link:hover{
+	background-image:url(../images/nav.png);
+	color:#666666;
+	border:2px solid #ccc;
+}
+a img {
+	border: 2px solid black;
+}
+a img:hover {
+	border: 2px solid white;
+}
+.blog {
+	margin: 0 auto;
+	color:white;
+	border:2px solid #555555;
+	width:800px;
+	margin-bottom:5px;
+	text-align: left;
+}
+.blog .subject{
+	color: #aaaaaa;
+}
+.blog .head {
+	background-image:url(../images/nav.png);
+	border-bottom: 2px solid #555555;
+	text-align: left;
+}
+.blog .info {
+	font-size:.7em;
+	color:#888888;
+}
+.blog .text {
+	color:white;
+	font-size:.8em;
+	color:white;
+}
+.blogPagination {
+	margin: 10px auto 5px auto;
+	width:800px;
+}
+/*		User styles 	  */
+.userInfo {
+	color:white;
+	v-align:center;
+	margin-left:auto;
+ 	margin-bottom:10px;
+	margin-right:auto;
+	border:2px solid #555555;
+	border-collapse:collapse;
+}
+.userInfo .userHead {
+	text-align: center;
+	font-size:1.6em;
+	color: #aaaaaa;
+	background-image:url(../images/nav.png);
+	border-bottom:  2px solid #555555;
+}
+.settingsHeader {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+/*		Email styles      */
+.email{
+	border:3px solid #555555;
+	font-size:12pt;
+	font-family:Arial;
+	border-spacing:0px;
+	padding:5px;
+	width:900px;
+	margin: 0 auto;
+}
+.email a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+}
+.emailTop{
+	border-top:3px solid #555555;
+	border-right:3px solid #555555;
+	border-left:3px solid #555555;
+	font-size:12pt;
+	font-family:Arial;
+	border-spacing:0px;
+	padding:3px;
+	width:900px;
+	margin: 0 auto;
+}
+.emailBottom{
+	border-bottom:3px solid #555555;
+	border-right:3px solid #555555;
+	border-left:3px solid #555555;
+	font-size:12pt;
+	font-family:Arial;
+	border-spacing:0px;
+	padding:3px;
+	width:900px;
+	margin: 0 auto;
+}
+.checkBoxEmail{
+	border-bottom:1px solid #555555;
+	width:25px;
+	height:20px;
+}
+.emailFrom{
+	border-bottom:1px solid #555555;
+	display:inline-block;
+	overflow:hidden;
+	width:160px;
+	height:20px;
+}
+.emailSubject{
+	border-bottom:1px solid #555555;
+	width:610px;
+	height:20px;
+}
+.emailDate{
+	text-align:right;
+	border-bottom:1px solid #555555;
+	width:75px;
+	height:20px
+} 
+.emailHead{
+	border:3px solid #555555;
+	width:900px;
+	font-size:13pt;
+	font-family:Arial;
+	margin: 0 auto;
+}
+.emailBody{
+	border-bottom:3px solid #555555;
+	border-right:3px solid #555555;
+	border-left:3px solid #555555;
+	width:900px;
+	display:block;
+	overflow:auto;
+	font-size:12pt;
+	font-family:Arial;
+	margin: 0 auto;
+}
+
+/*----------------------------------FORUM-STYLES-------------------------------------------------------*/
+#forumCategories, #forumThreads, #forumPosts {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	border-spacing:0px;
+	font-size: .8em;
+	border-collapse:collapse;
+	table-layout: fixed;
+}
+#forumCategories tr.forumHead th, #forumThreads tr.forumHead th, #forumPosts td.head{
+	background-image:url(../images/nav.png);
+	border: 1px solid #555555;
+	color: #888888;
+	text-align: center;
+}
+#forumCategories td, #forumThreads td, #forumPosts td {
+	border: 1px solid #555555;
+}
+#forumThreads td span, #forumCategories td span {
+	width: auto;
+	height: 1.2em;
+}
+
+#forumCategories span, #forumThreads span, #forumPosts span {
+	display: inline-block;
+}
+#forumCategories tr a:hover, #forumThreads tr a:hover {
+	color: #333333;
+}
+/*Forum Categories*/
+#forumCategories .forum {
+	width: 200px;
+}
+#forumCategories .forum .forumName {
+	width: 150px;
+	overflow: hidden;
+	text-align: left;
+}
+#forumCategories .forum .forumName a{
+	display: block;	
+}
+#forumCategories .forum .forumMod {
+	width: 50px;
+	text-align: right;
+	vertical-align:top;	
+}
+#forumCategories .lastPost {
+	width: 500px;
+}
+#forumCategories .lastPost .post {
+	width: 300px;
+	overflow: hidden;
+	vertical-align: top;
+	text-align: left;
+}
+#forumCategories .lastPost .post a {
+	display: block;	
+}
+#forumCategories .lastPost .who {
+	width: 200px;
+	text-align: right;
+}
+#forumCategories .threads {
+	width: 80px;
+	text-align: center;
+}
+#forumCategories .posts {
+	width: 80px;
+	text-align: center;
+	
+}
+
+/*Forum Threads*/
+#forumThreads .thread {
+	width: 400px;
+	text-align: left
+}
+#forumThreads .thread span {
+	display: block;	
+}
+#forumThreads .thread a {
+	display: block;
+}
+#forumThreads .lastPost {
+	width: 300px;
+	text-align: center;
+}
+#forumThreads .replies {
+	width: 80px;
+	text-align: center;
+}
+#forumThreads .author {
+	width: 80px;
+	text-align: center;
+}
+/*Forum Posts*/
+#forumPosts .head a:hover{
+	color: black;
+}
+#forumPosts .head {
+	width: 875px;
+
+}
+#forumPosts .who {
+	width: 800px;
+	text-align: left;
+}
+#forumPosts .alert {
+	width: 130px;
+	text-align: right;
+}
+#forumPosts .avatar {
+	width: 200px;
+	text-align: center;
+	vertical-align:top;
+}
+#forumPosts .post {
+	width: 725px;
+	vertical-align:text-top;
+	padding: 5px;
+	text-align: left
+}
+#forumPosts .post a {
+	text-decoration: underline
+}
+#forumPosts .post a:hover {
+	color:#333333;
+}
+#forumPagination {
+	margin: 0 auto;	
+	width: 935px;
+}
+/*Forum Reply*/
+#forumReply {
+	margin: 0 auto;
+}
+/*Forum Create New*/
+#newForum, #newCategory, #threadCreate {
+	border-spacing:0px;
+	border-collapse:collapse;
+	font-size: .8em;
+	border: 1px solid #555555;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#newForum td, #newCategory td, #threadCreate td {
+	text-align: left;
+}
+#newForum #submit, #newCategory #submit, #threadCreate #submit {
+	text-align: right;
+}
+.forumHead, .pictureHead {
+	text-align: center;
+	margin:0 auto;
+}
+.forumHead a:hover, .pictureHead a:hover {
+	color: #333333;
+}
+/*mod*/
+.mod {
+	position: relative;
+	vertical-align: bottom;
+}
+.mod ul {
+	position:absolute;
+	display: none;
+	background-color: #333333;
+	list-style: none;
+	top: 3px;
+	left: 0;
+	text-align: left;
+	padding: 2px;
+	color: white;
+	z-index: 100;
+	border:1px solid black;
+}
+.mod ul li a {
+	display: block;
+}
+.overlay {
+	position: relative;
+	vertical-align: bottom;
+}
+.overlay div {
+	position:absolute;
+	display: none;
+	background-color: #333333;
+	list-style: none;
+	top: 3px;
+	left: 0;
+	text-align: left;
+	padding: 2px;
+	color: white;
+	z-index: 100;
+	border:1px solid black;
+}
+.alertOverlay {
+	width: 400px;
+}
+#forumCategories .mod a:hover {
+	color: black;
+}
+#pagination {
+	text-align: right;
+}
+#pagination a, #pagination span {
+	border:1px solid black;
+	padding: 1px 3px 1px 3px;
+	font-size: .8em;
+	background-image:url(../images/nav.png);
+}
+#pagination a:hover {
+	color: black;	
+}
+.signature {
+
+}
+hr {
+	color: black;
+	background-color: black;
+	border: 100% ridge black;
+}
+/*----------------------------------Slide-Box-Styles---------------------------------------------------*/
+body {
+	margin: 0;
+	padding: 75px 0 0;
+}
+.slide-panel {
+	z-index: 25;
+	width: 5px;
+	position: absolute;
+}
+.bottom {
+	bottom: 0;
+}
+.right {
+}
+.left {
+	position: absolute;
+	left: 0;
+}
+.top {
+	top: 0;
+}
+.content {
+	margin-left: auto;
+	z-index: 10;
+	overflow: hidden;
+	text-align: left;
+	background-color: black;
+	height: 0;
+	width: 300px;
+	color: #fff;
+}
+.slide-button {
+	margin-left: auto;
+	position: relative;
+	background-color: black;
+	color: white;
+	right: 100px;
+	width: 100px;
+	z-index: 20;
+	cursor: pointer;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-border-bottom-right-radius: 10px;
+	-khtml-border-radius-bottomright: 10px;	
+	-moz-border-radius-bottomright: 10px; 
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-khtml-border-radius-bottomleft: 10px;	
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.slide-button:hover {
+	color: #9f9d8e;
+}
+/*-----------------------Light-Box-Styles----------------------------------------*/
+.lightBoxOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 90;
+	background-color: #333;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.lightBoxContainer {
+	position: absolute;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	z-index: 100;
+	background-color: white;
+	-moz-border-radius: 10px;	
+}
+.lightBoxLoadContainer img {
+	position: relative;
+	background-color: white;
+	margin: auto;
+}
+.hideBars {
+	overflow-y: hidden;
+}
+.lightBoxContainer img {
+	position: relative;
+}
+
+.lightBoxContainer .leftNav {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 50%;
+}
+.lightBoxContainer .rightNav {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 50%;
+	overflow: visible;
+}
+.rightNav .rightButton {
+	position: absolute;
+	right: 0;
+	height: 60px;
+	width: 30px;
+	margin-right: -20px;
+	background-color: white;
+	z-index: 101;
+	-moz-border-radius-topright: 10px; 
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px; 
+	-webkit-border-bottom-right-radius: 10px;
+	background-image: url("../images/rightArrow.gif");
+}
+.leftNav .leftButton {
+	position: absolute;
+	left: 0;
+	height: 60px;
+	width: 30px;
+	margin-left: -20px;
+	background-color: white;
+	z-index: 101;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-bottomleft : 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	background-image: url("../images/leftArrow.gif");
+}

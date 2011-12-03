@@ -1,0 +1,207 @@
+.music_main_container {
+    width: 100%;
+}
+
+.music_container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.music_container div {
+    overflow: hidden;
+}
+
+.music_container .playing {
+	/*margin-left: -10px;*/
+}
+
+.music_artist_name {
+    border: 1px solid white;
+    position: relative;
+}
+
+.music_album_container {
+    display: none;
+}
+
+.music_album_name {
+    border: 1px solid white;
+    margin-left: 20px;
+    position: relative;
+}
+
+.music_track_container {
+    display: none;
+}
+
+.music_track_name {
+    border: 1px solid white;
+    margin-left: 30px;
+    position: relative;
+}
+
+.player_container .controlls_container{
+    border: 1px solid white;
+/*    height: 17px;*/
+    margin: 2px 3px;
+    position: relative;
+    padding: 0;
+    word-spacing: 0;
+/*    width : 195px;*/
+}
+
+.player_container {
+    background-color: black;
+}
+
+.player_container .controlls_container .play_pause,
+.player_container .controlls_container .stop,
+.player_container .controlls_container .prev,
+.player_container .controlls_container .next,
+.player_container .controlls_container .status {
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    margin: 1px;
+    border: 1px solid white;
+}
+
+.player_container .controlls_container .play_pause {
+    background-image: url('/images/play.png');
+}
+
+.player_container .controlls_container .stop {
+    background-image: url('/images/stop.png');
+}
+
+.player_container .controlls_container .prev {
+    background-image: url('/images/prev.png');
+}
+
+.player_container .controlls_container .next {
+    background-image: url('/images/next.png');
+}
+
+.player_container .controlls_container .status {
+    position: relative;
+    width: 120px;
+    overflow: hidden;
+}
+
+.player_container .controlls_container .status_bar {
+    display: block;
+    height: 13px;
+    width: 0%;
+/*    padding: -5px;*/
+    border: 1px solid blue;
+    background-color: blue;
+    font-size: .7em;
+}
+
+.player_container .controlls_container .status_time {
+    padding: 1px 2px 2px 2px;
+    font-size: .8em;
+    position: absolute;
+    left: 0;
+}
+
+.player_container .now_playing_container {
+    border: 1px solid white;
+    margin: 2px 3px;
+    position: relative;
+    padding: 0;
+    word-spacing: 0;
+    width: 200px;
+}
+
+.player_container .now_playing_container div {
+    border: 1px solid white;
+    font-size: 10px;
+    margin: 1px;
+    padding:0 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.player_container .now_playing_container .artist,
+.player_container .now_playing_container .album {
+}
+
+.playlist_container {
+    border: 1px solid white;
+    margin: 1px;
+    background-color: black;
+}
+
+.playlist_container .playlist_entry>span,
+.playlist_container .playlist_header>span{
+    border: 1px solid white;
+    font-size: 11px;
+    margin: 1px;
+    padding:0 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.playlist_container .playlist_header span {
+    font-weight: bold;
+    text-align:center;
+    font-size: 12px;
+}
+
+.playlist_container .playlist_entry .artist,
+.playlist_container .playlist_header .artist  {
+    width: 100px;
+}
+
+.playlist_container .playlist_entry .album,
+.playlist_container .playlist_header .album {
+    width: 100px;
+}
+
+.playlist_container .playlist_entry .track,
+.playlist_container .playlist_header .track {
+    width: 200px;
+}
+
+.playlist_container .current_playlist span{
+    border-color: #555555;
+}
+
+.add_track {
+    background-image: url('/images/add.png');
+    border: 1px solid white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+
+.playlist_container .playlist_entry span.playlist_track_controls {
+    border: 1px solid white;
+    padding: 0; 
+}
+.playlist_track_controls span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 0px;
+    margin: 1px;
+}
+
+.playlist_track_remove {
+    background-image: url('/images/close.png');
+}
+
+.playlist_track_move_up {
+    background-image: url('/images/up.png');
+}
+
+.playlist_track_move_down {
+    background-image: url('/images/down.png');
+}

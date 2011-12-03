@@ -1,0 +1,220 @@
+<html>
+<head>
+    <title>JS test</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script language="javascript" src="sizzle.js"></script>
+    <script language="javascript" src="creasetoph_env.js"></script>
+    <script language="javascript" src="creasetoph_base.js"></script>
+    <script language="javascript" src="creasetoph_dialog.js"></script>
+    <!--<script language="javascript" src="creasetoph_main.js"></script>-->
+    <script language="javascript">
+    (function() {
+        var new_mover = C$.inherit('new_mover',['Animation','CreasetophLink']).prototype = {
+            properties: {left: 800},
+            time: 10000,
+            element: null,
+            animation: null,
+            Events: {
+                'click': 'onClick'
+            },
+            onClick: function(e) {
+                this.play($('#mover')[0]);
+                $('#mover')[0].css({'backgroundColor':'red'});
+                $('#mover')[0].animate({'height': '40'},function(){},5000).play();
+            }
+        }
+        var CreasetophLink = C$.inherit('CreasetophLink','CreasetophController').prototype = {
+            onClick: function(e) {
+                
+            }
+        };
+
+        var reverser = C$.inherit('reverser','').prototype = {
+            Events: {
+                'click' : 'onClick'
+            },
+            onClick: function(e) {
+                C$.find_object('new_mover').prototype.toggle($('#mover')[0]);
+            }
+        }
+
+        var stopper = C$.inherit('stopper','').prototype = {
+            Events: {
+                'click' : 'onClick'
+            },
+            onClick: function(e) {
+                C$.find_object('new_mover').prototype.stop($('#mover')[0]);
+            }
+        }
+
+        var dialog = C$.inherit('dialog','CreasetophDialogMinimizeable').prototype = {
+            dialog_width  : 200,
+            dialog_height : 200,
+            dialog_content: 'testing'
+        };
+        
+        var dialog2 = C$.inherit('dialog2','CreasetophDialogMinimizeable').prototype = {
+            dialog_width : 200,
+            dialog_height: 300,
+            dialog_minimized: false
+        };
+
+        var hover_dialog = C$.inherit('hover_dialog','CreasetophDialogStatic').prototype = {
+            content: 'hello there'
+        };
+
+        var create_dialog = C$.inherit('create_dialog','CreasetophController').prototype = {
+            toggle: true,
+            onClick: function(e) {
+                if(this.toggle) {
+                    $('#hover').add_dialog('popup_dialog','Static');
+                }else {
+                    $('#hover').remove_controller();
+                }
+                this.toggle = !this.toggle;
+            }
+        };
+
+        var CreasetophBody = C$.inherit('CreasetophBody','CreasetophController').prototype = {
+            cursor: false,
+            Events: {},
+            onClick: null
+        };
+
+        var fast_type = C$.inherit("fast_type",'CreasetophController').prototype = {
+            Events : {
+                'keydown' : 'onKeyDown'
+            },
+            sentance: 'Hello there im not actually typing this',
+            index: 0,
+            onKeyDown: function(e) {
+                if(e.keyCode !== 8) {
+                    if(this.index < this.sentance.length) {
+                        this.element.value += this.sentance[this.index];
+                        this.index++;
+                        e.preventDefault();
+                    }else {
+                        this.index = 0;
+                    }
+                }
+            }
+        };
+
+        var loading = C$.inherit('loading', 'CreasetophController').prototype = {
+            onClick: function(e) {
+                creasetoph.alert.prototype.open();
+            }
+        };
+
+        var stringify = C$.inherit('stringify','CreasetophController').prototype = {
+            test: 'ing',
+            obj: {
+                0:'zero',
+                1:'one',
+                2: {
+                    'nest': 'ed',
+                    'insi': 'de'
+                },
+                'arr':['asd','dsa']
+            },
+            onClick: function(e) {
+                alert(this.stringify(this.obj));
+            },
+            stringify: function(obj) {
+                var stringified = [],i;
+                if(typeof obj === 'object') {
+                    for(i in obj) {
+                        if(typeof obj[i] === 'object') {
+                            stringified.push('"' + i + '":' + this.stringify(obj[i]));
+                        }else if(typeof obj[i] === 'string') {
+                            stringified.push('"' + i + '":"'+ obj[i] + '"');
+                        }
+                    }
+                    return '{' + stringified.join(',') + '}';
+                }
+            }
+        };
+
+        var edit_in_place = C$.inherit('edit_in_place', 'CreasetophController').prototype = {
+            before_text: '',
+            editable: false,
+            form_counter: 0,
+            onClick: function(e) {
+                var el = e.originalTarget;
+                if(!this.editable) {
+                    this.before_text = el.innerHTML;
+                    el.innerHTML = '';
+                    var form   = document.createElement('span');
+                    var submit = document.createElement('span');
+                    var input  = document.createElement('input');
+                    $(submit)
+                        .add_class('crease_button')
+                        .set_attribute('submit','true')
+                        .set('Submit');
+                    input.value = this.before_text;
+                    input.name = $(el).get_name();
+                    form.appendChild(input);
+                    form.appendChild(submit);
+                    this.add_form(form);
+                    
+                    el.appendChild(form);
+                    this.editable = true;
+                }
+            },
+            add_form: function(form) {
+                $(form).add_form("EditInPlaceForm_"+this.form_counter,'CreasetophForm');
+                this.form_counter++;
+            }
+        };
+
+        var obj3 = C$.inherit('obj3',['obj1','obj4']).prototype = {
+            obj3: true
+        };
+        
+        var obj1 = C$.inherit('obj1','').prototype = {
+            obj1: true
+        };
+
+        var obj2 = C$.inherit('obj2','').prototype = {
+            obj2:true
+        };
+
+         var obj4 = C$.inherit('obj4','obj2').prototype = {
+            obj4:true
+        };
+
+        
+        
+    })();
+    </script>
+    <style type="text/css">
+
+
+        body {
+                    height: 100%;
+        }
+
+    </style>
+</head>
+<body controller="CreasetophBody">
+    <div id="testerre" name="test_edit" controller="edit_in_place" class="this">Hello there, testing js...</div>
+    <input id="text_box" type="text" value="Test box" controller="tester"/>
+    <br />
+    <div id="play" style="border:1px solid black;display: inline-block; position:absolute;top:60px;" controller="new_mover" >Play</div>
+    <div id="stop" style="border:1px solid black;display: inline-block; position:absolute;top:60px;left: 50px;" controller="reverser" >Toggle</div>
+    <div id="reverse" style="border:1px solid black;display: inline-block; position:absolute;top:60px;left: 120px;" controller="stopper" >Stop</div>
+    <div id="mover" style="border:1px solid black;display: inline-block; position:absolute;top:90px;" >Mover</div>
+    <div id="mover" style="border:1px solid black;display: inline-block; position:absolute;top:150px;left:100px;" controller="dialog">Dialog</div>
+    <div id="mover" style="border:1px solid black;display: inline-block; position:absolute;top:200px;left:100px;" controller="dialog2">Dialog2</div>
+    <div id="mover" style="border:1px solid black;display: inline-block; position:absolute;top:250px;left:100px;" controller="hover_dialog">HoverDialog</div>
+    <div id="mover" style="border:1px solid black;display: inline-block; position:absolute;top:150px;left:800px;" controller="create_dialog">Enable Hover</div>
+    <div id="hover" style="border:1px solid black;display: inline-block; position:absolute;top:150px;left:950px;">Hover</div>
+    <textarea id="text_area" controller="fast_type" style="border:1px solid black;display: inline-block; position:absolute;top:60px;left:600px;"></textarea>
+    <div id="load" style="border:1px solid black;display: inline-block; position:absolute;top:60px;left:950px;" controller="loading">loading</div>
+    <div id="stringify" style="border:1px solid black;display: inline-block; position:absolute;top:300px;left:950px;" controller="stringify">stringify</div>
+    <br />
+    <script language="javascript">
+        C$.when_DOM_ready(C$.init);
+    </script>
+</body>
+</html>

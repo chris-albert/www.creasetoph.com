@@ -1,0 +1,108 @@
+#creasetoph_music_container {
+    text-align: center;
+}
+
+/*Player Styles */
+#player_container {
+    border: 1px solid white;
+    margin: 0 auto;
+    -moz-border-radius: 10px;
+    display: inline-block;
+}
+
+#player_left_container {
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: 1px solid blue;
+}
+
+#player_center_container {
+    width: 300px;
+    height: 100px;
+    float: left;
+    border: 1px solid red;
+
+}
+
+#player_progress_container {
+    height: 20px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+#player_progress_bar {
+    width: 30px;
+    height: 20px;
+    background-color: red;
+}
+
+#player_artist_album,
+#player_track {
+    height: 20px;
+    margin: 10px;
+    border: 1px solid white;
+    font-size: 0.8em;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#player_artist_album>span,
+#player_track>span {
+    vertical-align: middle;
+}
+
+#player_play_button {
+    margin: 9px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    -moz-border-radius: 10px;
+    background-image: url(/images/play_80.png);
+}
+
+/*Content Styles*/
+#content_container {
+    display: inline-block;
+    margin: 10px auto;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/*Library Styles*/
+#library_container {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    -moz-border-radius: 10px;
+    overflow: auto;
+}
+
+#library_container div[artist], 
+#library_container div[album],
+#library_container div[track] {
+    border-bottom: 1px solid blue;
+    font-size: 0.9em;
+    padding: 1px;
+    text-align: left;
+    margin-left: 2px;
+}
+
+#library_container div[album] {
+    margin-left: 20px;
+}
+
+#library_container div[track] {
+    margin-left: 40px;
+}
+
+/*Playlist Styles*/
+#playlist_container {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    -moz-border-radius: 10px;
+}

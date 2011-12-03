@@ -1,0 +1,4 @@
+.video_container div {
+    border: 1px solid white;
+    overflow: hidden;
+}

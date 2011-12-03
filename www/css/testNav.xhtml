@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Creasetoph testing</title>
+    <style type="text/css">
+        .nav_main_container {
+            margin-top:100px;
+            border: 1px solid black;
+            height: 48px;
+            display: inline-block;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .nav_text , .nav_link{
+            border: 1px solid black;
+            /*display: inline-block;*/
+            position: relative;
+            height: 40px;
+            top: -40px;
+            /*z-index: 100;*/
+        }
+        .nav_link_container {
+            border: 1px solid black;
+            display: inline-block;
+            position: relative;
+            padding: 5px;
+            height: 45px;
+
+}
+        
+    </style>
+    <script language="javascript">
+        window.onload = function() {
+            var el = document.getElementById('clicker');
+            el.addEventListener('click',onClicker(),false);
+        }
+        function onClicker() {
+            alert('clicked');
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="nav_main_container" >
+        <div class="nav_link_container">
+            <div class="nav_text">Home</div>
+            <div class="nav_link">Home</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">Users</div>
+            <div class="nav_link" id="clicker">Users</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">Forum</div>
+            <div class="nav_link">Froum</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">Websites</div>
+            <div class="nav_link">Websites</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">Pictures</div>
+            <div class="nav_link">Pictures</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">Email</div>
+            <div class="nav_link">Email</div>
+        </div>
+        <div class="nav_link_container">
+            <div class="nav_text">About</div>
+            <div class="nav_link">About</div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
